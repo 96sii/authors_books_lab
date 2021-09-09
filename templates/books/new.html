@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<form action = "/books" method="post">
+    <div>
+        <label for = "title">Title</label>
+        <input type="text" id = "title" name ="title" placeholder = "Title">
+     </div>  
+    <div>
+        <label for = "author">Author</label>
+        <input type="text" id = "author-first-name" name ="author-first-name" placeholder = "First Name">
+        <input type="text" id = "author-last-name" name ="author-last-name" placeholder = "Last Name">
+       </div>
+       <div>
+        <label for = "publisher">Publisher</label>
+        <input type="text" id = "publisher" name ="publisher" placeholder = "Publisher">
+    </div>
+    <div>
+        <label for = "release-date">Release Date</label>
+        <input type="text" id = "release-date" name ="release_date" placeholder = "Release Date">
+</form>
+
+
+{% endblock content %}
